@@ -90,7 +90,13 @@
     console.log(array[i]=array[i]+1);
   }
 };
-7.const isAllPass = (N, Arr) => 
+7.const Inc_Arr = (array,N) => 
+{
+  for(i=0;i<array.length;i++){
+    console.log(array[i]=array[i]+1);
+  }
+};
+8.const isAllPass = (N, Arr) => 
 { 
   var result=0;
 for(var i=0;i<Arr.length;i++){
@@ -103,29 +109,25 @@ else
 return 'NO';
 
 };
-8.function Unique_Shirts (arr,N) { 
+9.function Unique_Shirts (arr,N) { 
     let unique=arr.filter((value)=>arr.indexOf(value)===arr.lastIndexOf(value));
       return (unique.length);
     
     }
-9.function arrayMin(arr) {
-    let maxNum = arr.reduce((prev, current) => {
-     return Math.min(prev, current)
-   },0);
-    return maxNum;
-   }
-   
-   function arrayMax(arr) {
-    let maxNum = arr.reduce((prev, current) => {
-     return Math.max(prev, current)
-   },0);
-    return maxNum;
-   
-   }
-10.function Birthday_Game(arr,D ,M) {
+10.function arrayMin(arr) {
+    let res1= Math.min(...arr);
+   return res1;
  
-
-}
+ }
+ 
+ function arrayMax(arr) {
+  
+  let res2= Math.max(...arr);
+  return res2;
+ 
+ }
+   
+   }
 
 </body>
 </html>
